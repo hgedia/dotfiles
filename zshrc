@@ -90,9 +90,9 @@ POWERLEVEL9K_USER_DEFAULT_FOREGROUND="016"
 POWERLEVEL9K_VCS_CLEAN_FOREGROUND='black'
 POWERLEVEL9K_VCS_CLEAN_BACKGROUND='green'
 POWERLEVEL9K_VCS_UNTRACKED_FOREGROUND='black'
-POWERLEVEL9K_VCS_UNTRACKED_BACKGROUND='yellow'
+POWERLEVEL9K_VCS_UNTRACKED_BACKGROUND='green'
 POWERLEVEL9K_VCS_MODIFIED_FOREGROUND='white'
-POWERLEVEL9K_VCS_MODIFIED_BACKGROUND='black'
+POWERLEVEL9K_VCS_MODIFIED_BACKGROUND='green'
 
 
 
@@ -133,3 +133,10 @@ bindkey '^`' autosuggest-clear
 alias vi=vim
 alias ls="exa"
 alias ll="exa -l --git --group-directories-first"
+
+
+#Git
+git config --global user.email "hgedia@hgedia.com"
+git config --global user.name "hgedia"
+
+
