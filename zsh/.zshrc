@@ -160,7 +160,7 @@ git config --global user.email "hgedia@hgedia.com"
 git config --global user.name "hgedia"
 
 export GOPATH=$HOME/Development/go
-export PATH=$PATH:$GOPATH/bin:$GOPATH/src/bitbucket.org/everledger/hyperledgerbins
+export PATH=$PATH:$GOPATH/bin
 
 
 alias cp="cp -i"                          # confirm before overwriting something
