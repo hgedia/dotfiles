@@ -274,6 +274,6 @@ mode "$mode_gaps_outer" {
 }
 exec --no-startup-id redshift -O 5000'
 
-exec compton -b --config /home/hgedia/.config/compton/compton.conf
+exec --no-startup-id compton -b --config /home/hgedia/.config/compton/compton.conf
 
-
+exec --no-startup-id dunst -config /home/hgedia/.config/dunst/dunstrc
