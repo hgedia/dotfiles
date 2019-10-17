@@ -283,5 +283,5 @@ bindsym Print exec flameshot gui
 
 for_window [class="^.*"] border pixel 0
 for_window [window_role="pop-up"] floating enable
-for_window [class="Nm-connection-editor"] floating enable
 for_window [class="Pavucontrol"] floating enable
+for_window [class="Connman-gtk"] floating enable
