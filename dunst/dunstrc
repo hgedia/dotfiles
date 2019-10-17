@@ -66,6 +66,8 @@ separator_height = 2
 #  * anything else will be interpreted as an X color
 separator_color = frame
 
+transparency = 25
+
 
 #  __
 # /   _  _ _|_ _  _ _|_
