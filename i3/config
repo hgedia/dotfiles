@@ -281,7 +281,11 @@ exec --no-startup-id dunst -config /home/hgedia/.config/dunst/dunstrc
 
 bindsym Print exec flameshot gui
 
+bindsym XF86MonBrightnessUp exec light -A 5
+bindsym XF86MonBrightnessDown exec light -U 5
+
 for_window [class="^.*"] border pixel 0
 for_window [window_role="pop-up"] floating enable
 for_window [class="Pavucontrol"] floating enable
 for_window [class="Connman-gtk"] floating enable
+for_window [class="zoom"] floating enable

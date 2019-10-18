@@ -2,7 +2,7 @@
 
 ## Package Manager
 
-yay -S i3-gaps polybar wireless_tools compton-tryone-git dunst libnotify feh demnu rofi nerd-fonts-complete pavucontrol networkmanager-dmenu-git exaranger connman connman-gtk  private-internet-access-vpn
+yay -S i3-gaps polybar wireless_tools compton-tryone-git dunst libnotify feh demnu rofi nerd-fonts-complete pavucontrol networkmanager-dmenu-git exaranger connman connman-gtk  private-internet-access-vpn light
 
 ## VIM
 
@@ -23,4 +23,10 @@ Add this section
 yay -G <package name> // Download locally 
 vi  PKGBUILD          // Edit file
 makepkg -si           // Install
+```
+
+Add user to Video Group for Light to run
+
+```
+sudo usermod -a -G video $LOGNAME
 ```
