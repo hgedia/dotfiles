@@ -2,7 +2,7 @@
 
 ## Package Manager
 
-yay -S i3-gaps polybar wireless_tools compton-tryone-git dunst libnotify feh demnu rofi nerd-fonts-complete pavucontrol networkmanager-dmenu-git exaranger connman connman-gtk  private-internet-access-vpn light
+yay -S i3-gaps polybar wireless_tools compton-tryone-git dunst libnotify feh demnu rofi nerd-fonts-complete pavucontrol networkmanager-dmenu-git exaranger connman connman-gtk  private-internet-access-vpn light imagemagick feh xorg-xrandr xorg-xdpyinfo i3lock-color betterlockscreen
 
 ## VIM
 
@@ -29,4 +29,10 @@ Add user to Video Group for Light to run
 
 ```
 sudo usermod -a -G video $LOGNAME
+```
+
+## Generate Lockscreen
+
+```
+betterlockscreen -u ~/Development/Wallpapers/trillectro-aaron-campbell-2560×1440.jpg
 ```

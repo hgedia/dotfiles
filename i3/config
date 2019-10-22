@@ -199,7 +199,7 @@ bindsym $mod+r mode "resize"
   client.background       #2B2C2B
 
 
-bindsym $mod+shift+x exec i3lock
+bindsym $mod+shift+x exec betterlockscreen -l dim
 
 #Autostart
 #exec --no-startup-id nitrogen --restore; 
@@ -274,7 +274,6 @@ mode "$mode_gaps_outer" {
         bindsym Escape mode "default"
 }
 
-
 exec --no-startup-id redshift -O 5000'
 exec --no-startup-id compton -b --config /home/hgedia/.config/compton/compton.conf
 exec --no-startup-id dunst -config /home/hgedia/.config/dunst/dunstrc
@@ -290,3 +289,4 @@ for_window [class="Pavucontrol"] floating enable
 for_window [class="Connman-gtk"] floating enable
 for_window [class="zoom"] floating enable
 for_window [class="pritunl"] floating enable
+
