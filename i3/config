@@ -273,14 +273,14 @@ mode "$mode_gaps_outer" {
         bindsym Return mode "default"
         bindsym Escape mode "default"
 }
+
+
 exec --no-startup-id redshift -O 5000'
-
 exec --no-startup-id compton -b --config /home/hgedia/.config/compton/compton.conf
-
 exec --no-startup-id dunst -config /home/hgedia/.config/dunst/dunstrc
+exec_always --no-startup-id  xrandr --output eDP-1 --off --output DP-1 --primary --mode 2560x1440 --pos 0x0 --rotate normal --output DP-2 --off
 
 bindsym Print exec flameshot gui
-
 bindsym XF86MonBrightnessUp exec light -A 5
 bindsym XF86MonBrightnessDown exec light -U 5
 
@@ -289,3 +289,4 @@ for_window [window_role="pop-up"] floating enable
 for_window [class="Pavucontrol"] floating enable
 for_window [class="Connman-gtk"] floating enable
 for_window [class="zoom"] floating enable
+for_window [class="pritunl"] floating enable
