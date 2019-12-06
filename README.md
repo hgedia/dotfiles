@@ -2,7 +2,7 @@
 
 ## Package Manager
 
-yay -S i3-gaps polybar wireless_tools compton-tryone-git dunst libnotify feh demnu rofi nerd-fonts-complete pavucontrol networkmanager-dmenu-git exaranger connman connman-gtk  private-internet-access-vpn light imagemagick feh xorg-xrandr xorg-xdpyinfo i3lock-color betterlockscreen colordiff
+yay -S i3-gaps polybar wireless_tools compton-tryone-git dunst libnotify feh demnu rofi nerd-fonts-complete pavucontrol networkmanager-dmenu-git exaranger connman connman-gtk  private-internet-access-vpn light imagemagick feh xorg-xrandr xorg-xdpyinfo i3lock-color betterlockscreen colordiff xclip jq
 
 ## VIM
 
