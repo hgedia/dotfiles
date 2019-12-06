@@ -8,14 +8,11 @@ export TERM="xterm-256color"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="powerlevel9k/powerlevel9k"
-POWERLEVEL9K_MODE='nerdfont-complete'
-
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
 # If set to an empty array, this variable will have no effect.
-ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
+ZSH_THEME="robbyrussell" 
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -68,51 +65,6 @@ plugins=(
 	zsh-syntax-highlighting
 	zsh-autosuggestions
 )
-
-#POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(user dir dir_writable vcs)
-#POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(history time)
-#POWERLEVEL9K_SHORTEN_DIR_LENGTH=1
-#POWERLEVEL9K_DIR_WRITABLE_FORBIDDEN_FOREGROUND="white"
-#POWERLEVEL9K_STATUS_VERBOSE=false
-#POWERLEVEL9K_TIME_BACKGROUND="black"
-#POWERLEVEL9K_TIME_FOREGROUND="249"
-#POWERLEVEL9K_TIME_FORMAT="%D{%H:%M}"
-#POWERLEVEL9K_COLOR_SCHEME='light'
-#POWERLEVEL9K_FOLDER_ICON=''
-#POWERLEVEL9K_VCS_GIT_ICON='\uF7A3'
-#POWERLEVEL9K_VCS_GIT_GITHUB_ICON='\uF7A3'
-#POWERLEVEL9K_ROOT_ICON=$'\uF0E7'
-#POWERLEVEL9K_USER_ROOT_BACKGROUND='196'
-#POWERLEVEL9K_USER_ROOT_FOREGROUND='016'
-#POWERLEVEL9K_USER_DEFAULT_BACKGROUND="202"
-#POWERLEVEL9K_USER_DEFAULT_FOREGROUND="016"
-
-#POWERLEVEL9K_VCS_CLEAN_FOREGROUND='black'
-#POWERLEVEL9K_VCS_CLEAN_BACKGROUND='green'
-#POWERLEVEL9K_VCS_UNTRACKED_FOREGROUND='black'
-#POWERLEVEL9K_VCS_UNTRACKED_BACKGROUND='green'
-#POWERLEVEL9K_VCS_MODIFIED_FOREGROUND='white'
-#POWERLEVEL9K_VCS_MODIFIED_BACKGROUND='green'
-#POWERLEVEL9K_VCS_UNTRACKED_ICON='\u25CF'
-#POWERLEVEL9K_VCS_UNSTAGED_ICON='\u00b1'
-#POWERLEVEL9K_VCS_INCOMING_CHANGES_ICON='\u2193'
-#POWERLEVEL9K_VCS_OUTGOING_CHANGES_ICON='\u2191'
-#POWERLEVEL9K_VCS_COMMIT_ICON="\uf417"
-
-POWERLEVEL9K_SHORTEN_DIR_LENGTH=1
-POWERLEVEL9K_CONTEXT_DEFAULT_BACKGROUND='5'
-POWERLEVEL9K_CONTEXT_DEFAULT_FOREGROUND='0'
-POWERLEVEL9K_STATUS_OK_BACKGROUND='8'
-POWERLEVEL9K_VCS_CLEAN_BACKGROUND='11'
-POWERLEVEL9K_VCS_UNTRACKED_BACKGROUND='8'
-POWERLEVEL9K_VCS_MODIFIED_BACKGROUND='10'
-POWERLEVEL9K_VCS_MAX_SYNC_LATENCY_SECONDS='0.05'
-POWERLEVEL9K_VI_INSERT_MODE_STRING='INSERT'
-POWERLEVEL9K_VI_COMMAND_MODE_STRING='NORMAL'﻿
-#POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status history time)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
-
-
 
 ZSH_DISABLE_COMPFIX=true
 
@@ -168,3 +120,13 @@ alias df='df -h'                          # human-readable sizes
 alias grep='grep --colour=auto'
 alias diff='colordiff'
 
+# Force session for dolphin
+XDG_CURRENT_DESKTOP=KDE
+
+setxkbmap gb
+
+
+function ppj()
+{
+    xclip -o | jq '.' 
+}
