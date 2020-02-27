@@ -2,7 +2,7 @@
 
 ## Package Manager
 
-yay -S base-devel i3-wm polybar wireless_tools compton-tryone-git dunst libnotify feh dmenu rofi nerd-fonts-complete pavucontrol networkmanager-dmenu-git exaranger connman connman-gtk  private-internet-access-vpn light imagemagick feh xorg-xrandr xorg-xdpyinfo i3lock-color betterlockscreen colordiff xclip jq networkmanager redshift flameshot light lightdm autorandr openssh pulseaudio lightdm-settings go
+yay -S base-devel i3-wm polybar wireless_tools compton-tryone-git dunst libnotify feh dmenu rofi nerd-fonts-complete pavucontrol networkmanager-dmenu-git exaranger connman connman-gtk  private-internet-access-vpn light imagemagick feh xorg-xrandr xorg-xdpyinfo i3lock-color betterlockscreen colordiff xclip jq networkmanager redshift flameshot light lightdm autorandr openssh pulseaudio lightdm-settings go nvm geany
 
 yay -S brave-bin nmcli nmtui visual-studio-code-bin dbeaver intellij-idea-community-edition robo3t-bin docker docker-compose spotify zoom slack-desktop
 
